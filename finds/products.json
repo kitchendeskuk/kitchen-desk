@@ -1,0 +1,82 @@
+[
+  {
+    "id": "silicone-utensils",
+    "asin": "B0CBPXVX9N",
+    "board": "Kitchen Gadget Finds",
+    "title": "Silicone cooking utensils set",
+    "blurb": "A compact non-stick-friendly utensil set with a holder — practical drawer kit without the novelty clutter.",
+    "price": "£13.72",
+    "image": "https://m.media-amazon.com/images/I/71vz98qIitL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B0CBPXVX9N/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "meal-prep-containers",
+    "asin": "B09QP97SVH",
+    "board": "Kitchen Gadget Finds",
+    "title": "Sistema nestable meal prep containers",
+    "blurb": "Compartment lunch boxes that nest when empty — useful for school, work, or batch cooking.",
+    "price": "£10.71",
+    "image": "https://m.media-amazon.com/images/I/71rQ550n1hL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B09QP97SVH/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "air-fryer-accessories",
+    "asin": "B0CR6S9PNN",
+    "board": "Kitchen Gadget Finds",
+    "title": "Dual-zone air fryer accessories set",
+    "blurb": "Racks and extras sized for larger dual-drawer air fryers — helpful if you cook two things at once.",
+    "price": "£22.99",
+    "image": "https://m.media-amazon.com/images/I/71ysGrB6h2L._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B0CR6S9PNN/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "monitor-stand",
+    "asin": "B00X4SCCFG",
+    "board": "Home Office Desk Setup",
+    "title": "Adjustable monitor stand with storage",
+    "blurb": "Raises the screen to a better height and keeps a little desk clutter underneath.",
+    "price": "£12.59",
+    "image": "https://m.media-amazon.com/images/I/61G8c17JsWL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B00X4SCCFG/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "laptop-stand",
+    "asin": "B096KHQWMF",
+    "board": "Home Office Desk Setup",
+    "title": "Foldable aluminium laptop stand",
+    "blurb": "Adjustable height laptop riser that folds flat — useful for a shared or small desk.",
+    "price": "£19.99",
+    "image": "https://m.media-amazon.com/images/I/61BK9+YGKML._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B096KHQWMF/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "cable-tray",
+    "asin": "B08N2ZQFJQ",
+    "board": "Home Office Desk Setup",
+    "title": "Under-desk cable management trays",
+    "blurb": "Two sturdy under-desk trays to get power bricks and leads off the floor.",
+    "price": "£22.95",
+    "image": "https://m.media-amazon.com/images/I/71bpQNRTFxL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B08N2ZQFJQ/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "under-sink-storage",
+    "asin": "B0DCK2QWW6",
+    "board": "Small Space Home Finds",
+    "title": "Two-tier under-sink organisers",
+    "blurb": "A pair of simple shelves for the awkward cupboard under the sink — kitchen or bathroom.",
+    "price": "£13.50",
+    "image": "https://m.media-amazon.com/images/I/81QhoeoULYL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B0DCK2QWW6/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "glass-meal-prep",
+    "asin": "B0DXQB6VPW",
+    "board": "Small Space Home Finds",
+    "title": "Glass meal prep containers (10 pack)",
+    "blurb": "Two sizes of airtight glass tubs that stack — practical when fridge space is tight.",
+    "price": "£19.98",
+    "image": "https://m.media-amazon.com/images/I/81mK-4MZ-XL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B0DXQB6VPW/?tag=kitchendeskuk-21"
+  }
+]
