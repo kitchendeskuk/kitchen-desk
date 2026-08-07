@@ -15,15 +15,13 @@ python3 -m http.server 5173
 
 Open http://localhost:5173
 
-## Deploy (GitHub Pages — £0)
+## Live site
 
-1. Create a GitHub repo (e.g. `kitchen-desk`) and push this folder
-2. Settings → Pages → Source: **Deploy from a branch** → `main` / root
-3. Site URL will be like `https://<user>.github.io/kitchen-desk/`
-4. Use that URL for:
-   - Pinterest Business profile website + claim
-   - Amazon Associates website list
-   - Pinterest developer app “company website” / privacy policy (`…/privacy.html`)
+**https://kitchendeskuk.github.io/kitchen-desk/**
+
+Repo: https://github.com/kitchendeskuk/kitchen-desk
+
+Use that URL for Pinterest claim, Amazon Associates website list, and developer privacy (`…/privacy.html`).
 
 ## Custom domain (optional later)
 
