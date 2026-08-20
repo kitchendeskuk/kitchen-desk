@@ -78,5 +78,65 @@
     "price": "£19.98",
     "image": "https://m.media-amazon.com/images/I/81mK-4MZ-XL._AC_SL1000_.jpg",
     "url": "https://www.amazon.co.uk/dp/B0DXQB6VPW/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "oil-sprayer",
+    "asin": "B0CP4XY9QC",
+    "board": "Kitchen Gadget Finds",
+    "title": "2-in-1 oil sprayer for cooking",
+    "blurb": "A 470ml glass bottle that sprays or pours — practical for air fryers, pans, and salads without a disposable aerosol.",
+    "price": "£7.99",
+    "image": "https://m.media-amazon.com/images/I/71ZjnwrH7iL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B0CP4XY9QC/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "measuring-spoons",
+    "asin": "B01B3827YY",
+    "board": "Kitchen Gadget Finds",
+    "title": "KitchenCraft magnetic measuring spoons",
+    "blurb": "Four dual-sided spoons that nest magnetically — eight measures that stay together in a small drawer.",
+    "price": "£6.22",
+    "image": "https://m.media-amazon.com/images/I/61FmbbfY0dL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B01B3827YY/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "cable-tidy-box",
+    "asin": "B0076XNIAI",
+    "board": "Home Office Desk Setup",
+    "title": "D-Line small cable tidy box",
+    "blurb": "UK-made cover that hides a 4-gang extension block and the spare cable behind a desk or TV.",
+    "price": "£9.99",
+    "image": "https://m.media-amazon.com/images/I/51q-NFcHz8L._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B0076XNIAI/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "desk-mat",
+    "asin": "B096S2Z9Q7",
+    "board": "Home Office Desk Setup",
+    "title": "100 x 40cm felt desk mat",
+    "blurb": "A dark grey felt pad for keyboard, mouse, and laptop — protects a small home-office desk without hanging off the edge.",
+    "price": "£17.99",
+    "image": "https://m.media-amazon.com/images/I/71nNMD8NtQL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B096S2Z9Q7/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "lazy-susan",
+    "asin": "B0BR1TJJ9X",
+    "board": "Small Space Home Finds",
+    "title": "Amazon Basics lazy susan 2-pack",
+    "blurb": "Two 30.5cm clear turntables for fridge or cupboard shelves — so jars at the back actually get used.",
+    "price": "£17.09",
+    "image": "https://m.media-amazon.com/images/I/81jUfcWloTL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B0BR1TJJ9X/?tag=kitchendeskuk-21"
+  },
+  {
+    "id": "over-door-hooks",
+    "asin": "B07RL54ZR3",
+    "board": "Small Space Home Finds",
+    "title": "Over-door hook rack (5 tri-hooks)",
+    "blurb": "Adds coat and bag storage without drilling — fits standard doors about 35–45mm thick.",
+    "price": "£17.99",
+    "image": "https://m.media-amazon.com/images/I/71GGytnzbrL._AC_SL1000_.jpg",
+    "url": "https://www.amazon.co.uk/dp/B07RL54ZR3/?tag=kitchendeskuk-21"
   }
 ]
