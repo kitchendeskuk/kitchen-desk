@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>View on Amazon — Kitchen Desk</title>
+    <meta
+      name="description"
+      content="Open this Kitchen Desk find on Amazon.co.uk."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .go-page {
+        max-width: 32rem;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+        text-align: center;
+      }
+      .go-page img {
+        width: min(100%, 320px);
+        margin: 1.5rem auto;
+        border-radius: 12px;
+        background: #fff;
+        box-shadow: var(--shadow);
+      }
+      .go-cta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 28rem;
+        margin: 1.25rem 0 0.75rem;
+        padding: 1rem 1.25rem;
+        border-radius: 999px;
+        background: var(--sage-deep);
+        color: #f7f4ec !important;
+        font-weight: 600;
+        font-size: 1.125rem;
+        text-decoration: none !important;
+        box-shadow: var(--shadow);
+      }
+      .go-cta:hover {
+        background: var(--accent);
+        color: #fff !important;
+      }
+      .go-meta {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      .go-fallback {
+        margin-top: 2rem;
+        color: var(--muted);
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html">Kitchen Desk</a>
+      <nav aria-label="Primary">
+        <a href="finds.html">Finds</a>
+        <a href="about.html">About</a>
+        <a href="disclosure.html">Disclosure</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main id="main" class="go-page">
+      <p class="brand-mark">Kitchen Desk</p>
+      <p id="status" class="lede">Loading this find…</p>
+      <div id="card" hidden>
+        <h1 id="title">Find</h1>
+        <img id="image" alt="" width="320" height="320" />
+        <p id="blurb" class="lede"></p>
+        <p id="price" class="go-meta"></p>
+        <a
+          id="cta"
+          class="go-cta"
+          rel="sponsored noopener noreferrer"
+          href="#"
+          >See today’s price on Amazon →</a
+        >
+        <p class="go-meta">
+          Opens Amazon.co.uk. As an Amazon Associate I earn from qualifying
+          purchases.
+        </p>
+      </div>
+      <p id="missing" class="go-fallback" hidden>
+        That find is unavailable.
+        <a href="finds.html">Browse current finds</a>.
+      </p>
+    </main>
+
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var id = params.get("id");
+        var asin = params.get("asin");
+        var statusEl = document.getElementById("status");
+        var card = document.getElementById("card");
+        var missing = document.getElementById("missing");
+
+        function showMissing() {
+          statusEl.hidden = true;
+          missing.hidden = false;
+        }
+
+        function amazonUrl(item) {
+          if (item.url && item.url.indexOf("amazon.") !== -1) return item.url;
+          var a = item.asin || asin;
+          return (
+            "https://www.amazon.co.uk/dp/" +
+            a +
+            "/?tag=kitchendeskuk-21"
+          );
+        }
+
+        function render(item) {
+          document.title = item.title + " — Kitchen Desk";
+          document.getElementById("title").textContent = item.title;
+          document.getElementById("blurb").textContent = item.blurb || "";
+          document.getElementById("price").textContent = item.price
+            ? "About " + item.price + " on Amazon"
+            : "";
+          var img = document.getElementById("image");
+          img.src = item.image || "";
+          img.alt = item.title || "";
+          var cta = document.getElementById("cta");
+          cta.href = amazonUrl(item);
+          statusEl.hidden = true;
+          card.hidden = false;
+          // Prefetch intent: focus the only action
+          cta.focus();
+        }
+
+        fetch("finds/products.json", { cache: "no-store" })
+          .then(function (r) {
+            if (!r.ok) throw new Error("catalog");
+            return r.json();
+          })
+          .then(function (items) {
+            var item = null;
+            for (var i = 0; i < items.length; i++) {
+              if (id && items[i].id === id) {
+                item = items[i];
+                break;
+              }
+              if (asin && items[i].asin === asin) {
+                item = items[i];
+                break;
+              }
+            }
+            if (!item && asin) {
+              item = {
+                title: "Amazon find",
+                blurb: "Continue to the product page on Amazon.co.uk.",
+                asin: asin,
+                url:
+                  "https://www.amazon.co.uk/dp/" +
+                  asin +
+                  "/?tag=kitchendeskuk-21",
+              };
+            }
+            if (!item) {
+              showMissing();
+              return;
+            }
+            render(item);
+          })
+          .catch(function () {
+            showMissing();
+          });
+      })();
+    </script>
+  </body>
+</html>
